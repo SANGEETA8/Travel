@@ -3,79 +3,477 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link type="text/css" rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+   
+  .row{
+    background-color: white;
+
+  }
+  
+  
+  body {
+      position: relative; 
+      
+  }
+  </style>
 
 </head>
 <body>
-<section>
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="images/guj1.jpg" style="width: 100%">
-  <div class="text">Statue of Unity</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="images/guj2.jpg" style="width: 100%">
-  <div class="text">Dwarkadish Temple</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="images/guj3.jpg" style="width: 100%">
-  <div class="text">Kakariya Lake</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-</section>
-
-<section id="welcome-text">
+  <section id="welcome-text">
     <div class="container">
         <h2>GUJRAT</h2>
         <p>Gujarat has been a tourist friendly State since ages. Being the ideal host is in the genes, Gujarat is moving ahead in the Tourism Sector with its scenic forest . 
             Go to <a href="booknow.html">Booknow page</a>  to experience the Adventure.
         </p>
     </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Spritual Places</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Adventure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Wildlife</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 </section>
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
+<section>
+  <div class="text1" style="height: 80%;">
+    <h2 >Explore More </h2>
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  </div>
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
+  
+  <!-- The slideshow -->
+    
+  
+  <!-- Left and right controls -->
+  
+
+</section>
+<section>
+  <div id="section1" class="container-fluid bg-gradient text-black" style="padding:100px 20px;">
+    <h3 class="text">Spritual Places</h3>
+    <p>Himachal Pradesh offers wonderful reasons to leave your city and pick up any peaceful place to spend a day or two. When it comes to powerful pilgrimage sites, Himachal Pradesh has many of them. They offer spiritual food to the visitors along with interesting stories as an abstract souvenir. We rounded off 10 such sites that are worth travelling to. Check out.</p>
+    <br>
+    <div class="container my-4">
+    
+      <hr class="my-4">
+  
+      <!--Carousel Wrapper-->
+      <div id="demo1" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#demo1" data-slide-to="0" class="active"></li>
+            <li data-target="#demo1" data-slide-to="1"></li>
+            <li data-target="#demo1" data-slide-to="2"></li>
+          </ol>
+        <!--/.Controls-->
+  
+        
+        <!--/.Indicators-->
+        <a class="carousel-control-prev" href="#demo1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#demo1" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+     
+  
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+  
+          <!--First slide-->
+          <div class="carousel-item active">
+  
+            <div class="row" style="background-color: white;" >
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp1.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title" style="font-display:black;">Naina Devi Mandir</h4>
+                    <p class="card-text" style="font-display:black;">This hill top temple of goddess Durga in her divine form Naina Devi is located in Bilaspur district of Himachal Pradesh. By road it connects NH-21 with other cities, and the nearest airport is at Chandigarh (100 km). It is a Shaktipeeth thronged by thousands of devotees of the goddess every year. </p>
+                    
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp2.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Jwala Devi</h4>
+                    <p class="card-text">Jwala Devi Temple is also known as Jwala Ji Temple, located in the Kangra district of Himachal Pradesh. It is one of its kind and there is no idol placed inside but a flame. It is one of the 51 Shakti Peeth and Hindus who believe that a visit to the Jwala Devi temple in Kangra leads to the end of their struggle and the commencement of happy days. </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp33.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Baijnath, Dhauladhar</h4>
+                    <p class="card-text">This temple of Lord Shiva is many years old. In fact, it has its origin from the time when Ravana, the Lankan king lived on earth. It is believed that Ravana worshipped Lord Shiva at this site. Still, other legends have it that Ravana was tricked by the gods to put down the Shivalinga which soon after became immovable from the place. The wall carvings of Baijanath temple depict its background. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.First slide-->
+  
+          <!--Second slide-->
+          <div class="carousel-item">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp5.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Baba Balak Nath, Hamirpur</h4>
+                    <p class="card-text">This blessed shrine is located in Chakmoh village which lies 45 km from Hamirpur on the top of a hill. The temple is actually a naturally carved cave. It enshrines an idol of the saint, and pilgrims offer flatbreads made of jaggery as offerings to the divine entity. </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp4.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Hidimba Devi, Manali</h4>
+                    <p class="card-text">Hidimba was one of the wives of Bhima, the Pandava hero of the Mahabharata. Though born in a demon race, Hidimba was a noble woman by nature. To honour this great lady, a temple was made in Manali by one of the former kings of the region.  </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp6.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Bijli Mahadev, Kullu</h4>
+                    <p class="card-text">The temple of Bijli Mahadev sits in the Kullu Valley at a height of 2,460 m. It is situated 22 km from Kullu where the Beas River flows, and is reachable only through a 3km-long trek. The trek ushers the pilgrim through breathtaking landscapes until the traveller is rewarded manifolds by the sight of Bijli Mahadev.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Second slide-->
+  
+          <!--Third slide-->
+                  <!--/.Third slide-->
+  
+        </div>
+        <!--/.Slides-->
+  
+      </div>
+      <!--/.Carousel Wrapper--> 
+  </div>
+</section>
+  <section>
+  <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+    <h3 class="text">Adventure</h3>
+    <p>Himachal Pradesh tops the list for being blessed with the most exciting adventure places in India. Thriving with unforgettable experiences, there are a number of adventure destinations in Himachal Pradesh.</p>
+    <br>
+    <div class="container my-4">
+    
+      <hr class="my-4">
+  
+      <!--Carousel Wrapper-->
+      <div id="demo2" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#demo2" data-slide-to="0" class="active"></li>
+            <li data-target="#demo2" data-slide-to="1"></li>
+            <li data-target="#demo2" data-slide-to="2"></li>
+          </ol>
+        <!--/.Controls-->
+  
+        
+        <!--/.Indicators-->
+        <a class="carousel-control-prev" href="#demo2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#demo2" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+     
+  
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+  
+          <!--First slide-->
+          <div class="carousel-item active">
+  
+            <div class="row" style="background-color: white;" >
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp7.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title" style="font-display:black;">Bir Billing</h4>
+                    <p class="card-text" style="font-display:black;">The beauty of the Himalayas in essence, Bir Billing- the hub of paragliding is one of the most popular adventure-blessed places in Himachal Pradesh. If you want to experience the feeling of flying like a bird, then this is your best bet. It is known to host the World Paragliding Championship every year</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp8.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Kullu Manali</h4>
+                    <p class="card-text">Nothing beats the amazements of Kullu Manali when counting the best adventure sports in Himachal Pradesh and also India.Adventure sports to try in Kullu Manali: River rafting, Trekking, Camping, Skiing, Heli-Skiing, Mountaineering, etc.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp9.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Lahaul Spiti</h4>
+                    <p class="card-text">The road expedition from Manali to Leh passing through the Lahaul & Spiti Valley is the dose of adrenalin you must try. There are scenic trails of which the most challenging is, Chandrataal Trek. Adventure sports to try in Lahaul Spiti Valley: Trekking, Camping, River Rafting, Mountain Biking, Cycling, Jeep Safari, etc. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.First slide-->
+  
+          <!--Second slide-->
+          <div class="carousel-item">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp10.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Triund</h4>
+                    <p class="card-text">One of the scenic beauties of the Himalayas, Triund is one of the most beautiful as well as adventurous trekking destinations in Himachal. Nestled in the lap of Dhauladhar Range, the popular trek in India offers jaw-dropping views.  
+                      Adventure sports to try in Triund: Trekking, camping, nature walks, etc.
+                    </p>    
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp11.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Rohtang Pass</h4>
+                    <p class="card-text">One of the high mountains passes in India at an altitude of 13,000 feet above sea level, Rohtang Pass is one of the best places for adventure in India. The gateway to Lahaul and Spiti Valley in Himachal Pradesh that leads to the region of Ladakh, Rohtang is a challenge for daring adventure sports.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp12.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Kheer Ganga, Parvati Valley</h4>
+                    <p class="card-text">Himachal Pradesh has many beautiful secrets. Among them, the Parvati Valley is one of the most beautiful offbeat places in Himachal. In addition, the KheerGanga is listed among the best treks in India. Furthermore, if you love to relax in a natural Jacuzzi enveloped by snow-capped mountains, then this is the place to be. Adventure sports to try in Kheer Ganga: Trekking, camping, etc.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Second slide-->
+  
+          <!--Third slide-->
+          
+          <!--/.Third slide-->
+  
+        </div>
+        <!--/.Slides-->
+  
+      </div>
+      <!--/.Carousel Wrapper--> 
+    </div>
+  </section>
+
+  <section>
+  
+  <div id="section3" class="container-fluid bg-dark text-black" style="padding:100px 20px;">
+    <h3 class="text">Wildlife</h3>
+    <p style="color: rgb(231, 226, 226);">Here is a list of the best wildlife sanctuaries in Gujarat that offer a glimpse into the rich flora and fauna of this beautiful destination. Take a look and note these down for your next adventurous escape!</p>
+    <br>
+    <div class="container my-4">
+    
+      <hr class="my-4">
+  
+      <!--Carousel Wrapper-->
+      <div id="demo3" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#demo3" data-slide-to="0" class="active"></li>
+            <li data-target="#demo3" data-slide-to="1"></li>
+            <li data-target="#demo3" data-slide-to="2"></li>
+          </ol>
+        <!--/.Controls-->
+  
+        
+        <!--/.Indicators-->
+        <a class="carousel-control-prev" href="#demo3" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#demo3" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+     
+  
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+  
+          <!--First slide-->
+          <div class="carousel-item active">
+  
+            <div class="row" style="background-color: white;" >
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp13.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title" style="font-display:black;">Shimla Water Catchment Wildlife Sanctuary</h4>
+                    <p class="card-text" style="font-display:black;">The Shimla Water Catchment Wildlife Sanctuary is one of the most famous wildlife sanctuaries in Himachal. It is a forested preserve of nature featuring hills and valleys with many hiking trails and wildlife. The sanctuary is very beautiful and has dense Deodar forests that vastly stretch out.
+                     </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp14.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Manali Wildlife Sanctuary</h4>
+                    <p class="card-text">Manali Wildlife Sanctuary is full of exquisite greenery and wild mountain animals. 
+                      Located just 2 km from the main town, the sanctuary is spread across an area of 3,180 hectares.  
+                      You can spot a lot of animals within the park including Flying Fox, Indian Hare, Musk Deer, Himalayan Tahr and many such exotic animals. Trees like the Deodar, Kail, Horse Chestnut, and Maple cover the entirety of the sanctuary.
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp15.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Kais Wildlife Sanctuary</h4>
+                    <p class="card-text">The Kais Wildlife Sanctuary is located in the serene valleys of Kullu. A trip to this sanctuary is the perfect way to endorse a trip within nature. The mesmerizing and lush green surroundings make for a peaceful abode. You can spot an exotic range of animals including goral, cheer pheasant, sambar, barking deer, leopard, etc.
+                       </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.First slide-->
+  
+          <!--Second slide-->
+          <div class="carousel-item">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp16.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Kugti Wildlife Sanctuary</h4>
+                    <p class="card-text">Witness nature’s magic within the serene land of Chamba in Himachal Pradesh. It is one of the largest wildlife sanctuaries in Himachal Pradesh and contains the rarest species of flora and fauna. The amazing deodar and coniferous vegetation lets you behold the mesmerizing nature in front of your eyes. 
+                      </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp17.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Dhauladhar Wildlife Sanctuary</h4>
+                    <p class="card-text">Dhauladhar Wildlife Sanctuary otherwise also popular as the Gopalpur Zoo is surrounded by the Dhauladhar mountain ranges in Kangra district. 
+                      The zoo is full of maple, chestnut and chil trees. You can spot some Asiatic lions, Himalayan black bears, cheetahs, sambar, ghoral, pheasants, peacocks and so many more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/hp18.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Churdhar Wildlife Sanctuary</h4>
+                    <p class="card-text">Churdhar is another one of the great wildlife sanctuaries in Himachal Pradesh that one can visit. 
+                      It was established in 1985 and can be seen nestled in the districts of Sirmaur and Shimla in Himachal Pradesh.
+                      One can also witness Indian peafowl, red jungle fowl, and koklass pheasant residing here harmoniously. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Second slide-->
+  
+          <!--Third slide-->
+          
+          <!--/.Third slide-->
+  
+        </div>
+        <!--/.Slides-->
+  
+      </div>
+      <!--/.Carousel Wrapper-->
+    </div>
+</section>
 
 </body>
 </html> 

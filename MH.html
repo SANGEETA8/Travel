@@ -3,79 +3,465 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link type="text/css" rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+   
+  .row{
+    background-color: white;
+
+  }
+  
+  
+  body {
+      position: relative; 
+      
+  }
+  </style>
 </head>
 <body>
-<section>
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="images/mh1.jpg" style="width: 100%">
-  <div class="text">Mahabaleshwar</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="images/mh2.jpg" style="width: 100%">
-  <div class="text">Gateway of india</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="images/mh3.jpg" style="width: 100%">
-  <div class="text">SiddhiVinayak</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-</section>
-
-<section id="welcome-text">
+  <section id="welcome-text">
     <div class="container">
         <h2>MAHARASTRA</h2>
         <p>Maharashtra boasts a number of well known hill stations as well as coastal towns with amazing sea beaches. Some of the well known hill stations that attract tourists are Khandala, Matheran, Mahabaleshwar, Panchgani etc. Coastal towns of Alibaug, Malvan, Ganpatipule are also popular with tourists.
              Go to <a href="booknow.html">Booknow page</a>  to experience the Adventure.
         </p>
     </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Spritual Places</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Adventure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Wildlife</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 </section>
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
+<section>
+  <div class="text1" style="height: 80%;">
+    <h2 >Explore More </h2>
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  </div>
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+</section>
+<section>
+  <div id="section1" class="container-fluid bg-success text-black" style="padding:100px 20px;">
+    <h3 class="text">Spritual Places</h3>
+    <p>Bestowed with five Jyotirlingas; two Shakti Peethas; one Panj Takht; beautiful churches; gigantic mosques; and a city that plays host to the grand Kumbh Mela- Nashik, Maharashtra is blessed by the presence of all the gods. It is a sacred land where people of different religion come to together to pray and seek blessings of God; be it Hindu, Parsi, Muslim, Sikh, Christian, Buddhists or Jains.</p>
+    <br>
+    <div class="container my-4">
+    
+      <hr class="my-4">
+  
+      <!--Carousel Wrapper-->
+      <div id="demo1" class="carousel slide" data-ride="carousel">
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#demo1" data-slide-to="0" class="active"></li>
+            <li data-target="#demo1" data-slide-to="1"></li>
+            <li data-target="#demo1" data-slide-to="2"></li>
+          </ol>
+        <!--/.Controls-->
+  
+        
+        <!--/.Indicators-->
+        <a class="carousel-control-prev" href="#demo1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#demo1" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+     
+  
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+  
+          <!--First slide-->
+          <div class="carousel-item active">
+  
+            <div class="row" style="background-color: white;" >
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh1.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title" style="font-display:black;">Shani Shingnapur Temple Maharashtra</h4>
+                    <p class="card-text" style="font-display:black;">Shani Shingnapur, 160 kilometers from Pune, marks an important place in Maharashtra's pilgrimage tour due to the God Shani or Shanaishwara temple. In the temple, God Shani is worshiped in form of unique looking black stone is his swayambhu form; standing tall on an open platform.</p>
+                    
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh2.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Vigneshwara Temple Ozar Pune</h4>
+                    <p class="card-text">One of the best-known Hindu temples in Pune is Vigneshwara Temple, situated on the bank of Kukadi river. Vigneshwara Temple honors of Ganesha. As per the historical records, Lord Ganesh made Ozar his permanent abode after defeating a demon called Vighnasur.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh3.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Aundha Nagnath Temple Hingoli</h4>
+                    <p class="card-text">Aundha Nagnath Temple is an ancient temple of Shiva located in the district of Hingoli, Maharashtra, India. It is also considered as one of the Jyotirlinga.
+                            The total temple campus is spread over an area of 60,000 sq. ft, the temple height is 60 ft and covers area of 7200 sq. ft. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.First slide-->
+  
+          <!--Second slide-->
+          <div class="carousel-item">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh4.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Mahalakshmi Temple</h4>
+                    <p class="card-text">Mahalakshmi Temple of Kolhapur honors Durga, the goddess of health and prosperity. According to the mythological facts, it is believed that Sati’s eyes fell at the same place where the temple currently stands. And that's the reason why it is revered as Shaktipeetha.  </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh5.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Ranjangaon Ganpati Temple </h4>
+                    <p class="card-text">Believed to be created by Lord Shiva, Ranjangaon is an important pilgrimage attraction of Maharashtra. The distinctive feature of the temple is its architecture; designed in such a way that during ‘dakshinayan’ and ‘uttarayan’ (movement of the sun to the south and north), the sun rays fall directly on the deity. Sanctum of the temple, where one can see the idol of Ganesha in a sitting position with trunk to the left. </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh6.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Shirdi Sai Baba Temple</h4>
+                    <p class="card-text">According to locals, a mysterious ‘fakir’ (a wanderer, regarded by devotees as Shirdi Sai Baba) came to Shirdi in his teens and lived there for more than 60 years. Gifted with the magical ability, the ‘fakir’ was a master ‘yogi’ who used to demonstrate his skill upon many occasions. It was simply because of Sai Baba's simple living and high virtues that drew devotees to Shirdi even today. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Second slide-->
+  
+          <!--Third slide-->
+                  <!--/.Third slide-->
+  
+        </div>
+        <!--/.Slides-->
+  
+      </div>
+      <!--/.Carousel Wrapper--> 
+  </div>
+</section>
+  <section>
+  <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+    <h3 class="text">Adventure</h3>
+    <p>The adventure sports in Maharashtra are abundant; you just need to know the right places around. If you are in the mood to rush through your adrenaline in the body and experience of a kind thing in your lifetime, visiting Maharashtra can be a good bet.</p>
+    <br>
+    <div class="container my-4">
+    
+      <hr class="my-4">
+  
+      <!--Carousel Wrapper-->
+      <div id="demo2" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#demo2" data-slide-to="0" class="active"></li>
+            <li data-target="#demo2" data-slide-to="1"></li>
+            <li data-target="#demo2" data-slide-to="2"></li>
+          </ol>
+        <!--/.Controls-->
+  
+        
+        <!--/.Indicators-->
+        <a class="carousel-control-prev" href="#demo2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#demo2" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+     
+  
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+  
+          <!--First slide-->
+          <div class="carousel-item active">
+  
+            <div class="row" style="background-color: white;" >
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh7.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title" style="font-display:black;">Waterfall Rappelling</h4>
+                    <p class="card-text" style="font-display:black;">If you are in the mood to blend in water and land adventure activity, opting for waterfall rappelling is possibly one of the best activities that you can indulge in. People visiting Maharashtra for the adventure sports often tend to combine the waterfall rappelling with a trekking trip to make the most out of it. </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh8.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Trekking</h4>
+                    <p class="card-text">For those who want to indulge in the most famous adventure sports in Maharashtra, trekking is possibly one of them. Several mountains range around the state offer amazing trekking trails, ranging from the easy ones for the beginners to the difficult ones for the advanced level adventurers.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh9.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Forest camping</h4>
+                    <p class="card-text">Yet another one of the amazing adventure activities in Maharashtra is the forest camping options. This is often part of the trekking expeditions that people set on but sometimes, can be done as an individual activity if you have the amenities to set up a camp around the forest regions. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.First slide-->
+  
+          <!--Second slide-->
+          <div class="carousel-item">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh10.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Rafting</h4>
+                    <p class="card-text">If you want a rafting trip that gushes you down a steady stream of water along with the blanket of lush greenery on both sides, there are several options that you can look into while in Maharashtra. Kolad is a very famous spot for this that you can check out if you are in the mood for some of this.</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh11.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Hot Air Balloon Safari</h4>
+                    <p class="card-text">The hot air balloon is quite an amazing activity that you can check out if you are in the mood for something out of the box and different around. </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh12.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Scuba diving</h4>
+                    <p class="card-text">If you are into watersports and have been in the mood to indulge in some while you are in Maharashtra, scuba diving is an amazing spot you can visit. The unique range of marine flora and fauna of the Arabian Sea is one that you just can’t compare anything with. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Second slide-->
+  
+          <!--Third slide-->
+          
+          <!--/.Third slide-->
+  
+        </div>
+        <!--/.Slides-->
+  
+      </div>
+      <!--/.Carousel Wrapper--> 
+    </div>
+  </section>
+
+  <section>
+  
+  <div id="section3" class="container-fluid bg-dark text-black" style="padding:100px 20px;">
+    <h3 class="text">Wildlife</h3>
+    <p style="color: white;">It has earned its recognition owing to its several amazing cities and plenty of heart taking attractions however there are several fascinating and renowned wildlife sanctuaries which are very well visited by people coming from different parts of the country. Some of the finest wildlife sanctuaries in Maharashtra are mentioned below. </p>
+    <br>
+    <div class="container my-4">
+    
+      <hr class="my-4">
+  
+      <!--Carousel Wrapper-->
+      <div id="demo3" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#demo3" data-slide-to="0" class="active"></li>
+            <li data-target="#demo3" data-slide-to="1"></li>
+            <li data-target="#demo3" data-slide-to="2"></li>
+          </ol>
+        <!--/.Controls-->
+  
+        
+        <!--/.Indicators-->
+        <a class="carousel-control-prev" href="#demo3" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#demo3" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+     
+  
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+  
+          <!--First slide-->
+          <div class="carousel-item active">
+  
+            <div class="row" style="background-color: white;" >
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh13.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title" style="font-display:black;">Nagzira Wildlife Sanctuary</h4>
+                    <p class="card-text" style="font-display:black;">Nagzira Wildlife Sanctuary is a very beautiful and quite a decent wildlife sanctuary which is located between Bhandara and Gondia district of Maharashtra. It is home to several wild animals, reptiles and birds of various species.
+                     </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh14.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Melghat Wildlife Sanctuary</h4>
+                    <p class="card-text">Melghat Wildlife Sanctuary is a very popular reserve well located in Amravati district right on the Satpura Hill Range. The core area and the buffer area of the reserve are formed by the beautiful blend of Gugamal National Park and Chikhaldara Wildlife Sanctuary and it is decently recognised for the magnificent Tiger Reserve.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh15.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">BhimaShankar Wildlife Sanctuary</h4>
+                    <p class="card-text">BhimaShankar Wildlife Sanctuary is set in the Ambegaon and Khed talukas of Pune and is said to be one of the finest protected habitats of the Indian Giant Squirrel which is the state animal of Maharashtra. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.First slide-->
+  
+          <!--Second slide-->
+          <div class="carousel-item">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh16.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Koyna Wildlife Sanctuary</h4>
+                    <p class="card-text">Koyna Wildlife Sanctuary is a well-known wildlife sanctuary well situated in Satara District right amidst the mighty Western Ghats. It is widely visited by tourists as well as locals and you can truly spot a wide variety of wildlife species in its vicinity.
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh17.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Sagareshwar Wildlife Sanctuary</h4>
+                    <p class="card-text">Sagareshwar Wildlife Sanctuary is a very renowned and recognised tourist destination located in Sangli District of Maharashtra. 
+                      It is a great place to visit with your near and dear ones to witness a wide variety of wildlife animals such as deer, wild boar, striped hyena and porcupines living in their natural habitat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="images/mh18.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Bor Wildlife Sanctuary</h4>
+                    <p class="card-text">Bor Wildlife Sanctuary is one of the finest wildlife sanctuaries located near Hingani right in the heart of Wardha District. 
+                      It is indeed a very well recommended place to visit with friends and family owing to its wide variety of wildlife species and several species of birds which are seen and spotted living joyfully in their natural habitat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Second slide-->
+  
+          <!--Third slide-->
+          
+          <!--/.Third slide-->
+  
+        </div>
+        <!--/.Slides-->
+  
+      </div>
+      <!--/.Carousel Wrapper-->
+    </div>
+</section>
 
 </body>
 </html> 
