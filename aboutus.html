@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  background-color: rgb(175, 242, 155);
+  box-sizing: content-box;
+
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container {
+  padding: 0 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display:block;
+  background-image: url(/images/guj10.jpg);
+  background-attachment: fixed;
+ 
+}
+
+
+#about{
+
+    background-image: url(/images/booknow.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+    
+  
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Travelogy India, a Delhi - NCR based Tour Company, founded in 2022 dedicated to provide inbound travel services and hospitality. Years of experience added with creative tour packages and thousands of satisfied clients have made us one of the leading tour companies in India. Our philosophy stems from an old adage – leaving no stone unturned – which makes us reputable in Indian tour and travel circles.</p>
+  <p>We provide you the specific places in India to Travel and enjoy your vacation at your best.Experienced travel experts with well furnished India travel plans</p>
+</div>
+<section id="book">
+    <div class="container">
+        <div class="book-content-par">
+            <div class="book-counter">
+                <h3>Welcome</h3>
+                
+            </div>
+           
+        </div>
+    </div>
+</section>
+ <h2 style="text-align:center">what you can explore?</h2>
+ 
+ <div class="row">
+   <div class="column">
+     <div class="card">
+      
+       <div class="container">
+         <h2>Pilgrimage(Spritual Places)</h2>
+         <p>Haridwar, the gateway to the Gods, is situated on the right bank of the holy Ganga and is regarded among the seven sacred cities of India. Haridwar is also, the gateway to the four major pilgrimages- the Char Dham - Kedarnath, Badrinath, Gangotri and Yamunotri.</p>
+        
+       </div>
+       <br>
+     </div>
+   </div>
+    <div class="column">
+    <div class="card">
+       <div class="container">
+         <h2>Adventure</h2>
+         <p>If adventure is your thing, there is no better country than India to experience all kinds of thrills and activities. We have compiled a list of the best adventure places in India to satisfy your cravings for that perfect adrenaline rush. Let’s take a look at the best adventure places in India.
+
+         </p>
+       </div>
+      </div>
+    </div>
+      
+    <div class="column">
+     <div class="card">
+       <div class="container">
+         <h2>Wildlife</h2>
+         <p>India has very rich and diverse wildlife and has always drawn the attention of nature lovers from around the globe. From the mammoth mountain ranges in the north, the marshy lands in the east, to the tip of Kanyakumari in the south, India is home to a number of wildlife conservation parks and sanctuaries. 
+
+         </p>
+       </div>
+     </div>
+    </div>
+     
+</div>
+
+
+</body>
+</html>

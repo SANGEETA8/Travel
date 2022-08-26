@@ -283,7 +283,7 @@ section#welcome-text p{
 
 /* book section */
 #book{
-    background-image: url(../images/booknow1.jpg);
+    background-image: url(../images/TN11.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -612,21 +612,85 @@ p.copyright{
   .carousel-inner {
     padding: 1em;
     display: flex;
-    
+   
    
   }
+  .carousel-inner img {
+    
+    background-color: white;
+  }
 
+  /* #increaseHieght {
+    
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+     display: -webkit-box;
+-webkit-line-clamp: 10;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+
+  } */
+
+  #increaseHieght:hover {
+    
+     height:500px; 
+    
+}
+
+  #data {
+    
+    margin-bottom: 0;
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+     display: -webkit-box;
+-webkit-line-clamp: 10;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+#data:hover{
+    overflow: visible; 
+    white-space: normal; 
+    width: auto;
+    position: absolute;
+    background-color:#FFF;
+    height: auto;
+}
+/* #data:hover+p {
+    margin-top:20px;
+} */
+
+
+  .card-text{
+    margin-bottom: 0;
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+     display: -webkit-box;
+-webkit-line-clamp: 10;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+
+  }
   .card-img-top {
-    width: 100%;
-    height: 30vw;
-    object-fit: cover;
+    width: 50%;
+    max-height: 200px;
+    /* object-fit: cover; */
 }
   .carousel-item .container {
     display: flex;
     flex-direction: column;
+    
   }
   .carousel-item .card {
     flex-grow: 1;
+    
   }
 
   .carousel-control-prev,
